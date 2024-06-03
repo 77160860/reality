@@ -13,16 +13,8 @@ timedatectl set-timezone Asia/Shanghai
 v2uuid=$(cat /proc/sys/kernel/random/uuid)
 
 # 获取随机端口
-getPort() {
-    local port
-    port=$(shuf -i 1024-49151 -n 1 2>/dev/null)
-    while nc -z localhost "$port"; do
-        port=$(shuf -i 1024-49151 -n 1 2>/dev/null)
-    done
-    echo "$port"
-}
 
-PORT=$(getPort)
+PORT=36618
 
 # 获取IP地址
 getIP() {
