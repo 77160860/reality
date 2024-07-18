@@ -10,7 +10,7 @@ fi
 # 设置时区
 timedatectl set-timezone Asia/Shanghai
 # 生成uuid
-v2uuid=$(cat /proc/sys/kernel/random/uuid)
+v2uuid=98c5b35f-698a-4b2b-a952-08321b674967
 
 # 获取随机端口
 
