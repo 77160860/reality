@@ -14,7 +14,7 @@ v2uuid=$(cat /proc/sys/kernel/random/uuid)
 
 # 获取随机端口
 
-PORT=36618
+PORT=36818
 
 # 获取IP地址
 getIP() {
