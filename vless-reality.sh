@@ -42,7 +42,7 @@ install_xray() {
 reconfig() {
     reX25519Key=$(/usr/local/bin/xray x25519)
     rePrivateKey=$(echo "${reX25519Key}" | head -1 | awk '{print $3}')
-    rePublicKey=98c5b35f-698a-4b2b-a952-08321b674967
+    rePublicKey=QC81qhoHaDs-ujfIZQsZVbY-tHRNtP6PvlBzeTuy1Qc
 
 
     # 重新配置Xray
