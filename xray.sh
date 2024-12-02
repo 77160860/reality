@@ -11,7 +11,7 @@ fi
 timedatectl set-timezone Asia/Shanghai
 
 # 生成uuid
-v2uuid=$(cat /proc/sys/kernel/random/uuid)
+v2uuid=6699b70f-28c3-51a2-857c-d17213f583e9
 
 # 生成base64
 psk=$(openssl rand -base64 16)
@@ -43,7 +43,7 @@ getPorts() {
 
 # 获取两个随机端口
 PORTS=($(getPorts))
-PORT1=${PORTS[0]}
+PORT1=443
 PORT2=${PORTS[1]}
 
 
@@ -72,7 +72,7 @@ install_xray() {
 reconfig() {
     reX25519Key=$(/usr/local/bin/xray x25519)
     rePrivateKey=$(echo "${reX25519Key}" | head -1 | awk '{print $3}')
-    rePublicKey=$(echo "${reX25519Key}" | tail -n 1 | awk '{print $3}')
+    rePublicKey=PGG2EYOvsFt2lAQTD7lqHeRxz2KxvllEDKcUrtizPBU
 
     # 重新配置Xray
     cat >/usr/local/etc/xray/config.json <<EOF
