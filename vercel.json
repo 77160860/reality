@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "https://raw.githubusercontent.com/77160860/reality/refs/heads/main/Xray.sh",
-      "permanent": true
-    }
-  ]
-}
